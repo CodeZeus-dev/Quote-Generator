@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_lorem/flutter_lorem.dart';
 
-import './textControl.dart';
+import './text_control.dart';
+import './text_output.dart';
 
 class App extends StatefulWidget {
   @override
@@ -29,9 +30,7 @@ class _AppState extends State<App> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Text(
-              _quote,
-            ),
+            TextOutput(textInput: _quote),
             SizedBox(
               height: 50,
             ),
